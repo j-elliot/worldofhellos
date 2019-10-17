@@ -1,0 +1,69 @@
+
+
+python{
+sourcefile: hw.py
+command: python <sourcefile>
+}
+
+python3{
+sourcefile: hw.3.py
+command: python3 <sourcefile>
+}
+
+ruby{
+sourcefile: hw.rb
+command: ruby <sourcefile>
+}
+
+java{
+sourcefile: hw.java
+compile: javac -d ../bin <sourcefile>
+run: java -cp ../bin hw
+}
+
+c{
+sourcefile: hw.c
+compile: gcc -o ../bin/chw <sourcefile>
+run: ../bin/chw
+}
+
+c++{
+sourcefile: hw.cpp
+compile: g++ -o ../bin/cpphw <sourcefile>
+run: ../bin/cpphw
+}
+
+fortran{
+sourcefile: hw.f
+compile: gfortran -o ../bin/fhw <sourcefile>
+run: ../bin/fhw
+}
+
+fortran90{
+sourcefile: hw.f90
+compile: gfortran -o ../bin/f90hw <sourcefile>
+run: ../bin/f90hw
+}
+
+R{
+sourcefile: hw.R
+command: Rscript <sourcefile>
+}
+
+lisp{
+sourcefile: hw.lsp
+command: clisp <sourcefile>
+}
+
+javascript{
+sourcefile: hw.js
+markupfile: file:///root/Documents/Personal/Operations/Computers/worldofhellos/source/hw.js.html
+}
+
+c#{
+sourcefile: hw.cs
+compile: csc -out:../bin/hw.exe <sourcefile>
+run: mono ../bin/hw.exe
+}
+
+
