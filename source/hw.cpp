@@ -1,5 +1,3 @@
-//I don't actually know that .cpp is the correct file extension
-
 #include<iostream>
 
 using namespace std;
