@@ -66,4 +66,10 @@ compile: csc -out:../bin/hw.exe <sourcefile>
 run: mono ../bin/hw.exe
 }
 
+cobol{
+sourcefile: hw.cbl
+compile: cobc -free -x -o ../bin/cblhw <sourcefile>
+run: ../bin/cblhw
+}
+
 
